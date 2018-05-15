@@ -25,7 +25,7 @@ macro += "SET !EXTRACT NULL" + "\n";
 macro += "SET url {{!URLCURRENT}}" + "\n";
 macro += "TAB OPEN" + "\n";
 macro += "TAB T=2" + "\n";
-macro += "URL GOTO=http://rucaptcha.com/in.php?key={{captcha_key}}&method=userrecaptcha&googlekey={{k}}&pageurl={{url}}&soft_id=1607" + "\n";
+macro += "URL GOTO=http://rucaptcha.com/in.php?key={{captcha_key}}&method=userrecaptcha&googlekey={{k}}&pageurl={{url}}&soft_id=2163" + "\n";
 macro += "WAIT SECONDS=1" + "\n";
 macro += "TAG POS=1 TYPE=* ATTR=TXT:* EXTRACT=TXT" + "\n";
 macro += "SET captid EVAL(\"var s=\\\"{{!EXTRACT}}\\\"; s.split(' ')[0].split('|')[1]\")" + "\n";
